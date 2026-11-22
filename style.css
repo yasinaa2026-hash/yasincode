@@ -1,0 +1,31 @@
+:root {
+  color-scheme: dark;
+  font-family: Inter, "Segoe UI", Tahoma, Arial, sans-serif;
+  background: #0d1220;
+  color: #edf2ff;
+}
+* { box-sizing: border-box; }
+body { margin: 0; min-height: 100vh; background: radial-gradient(circle at 15% 0%, #1a2a4d 0, #0d1220 42%); }
+.topbar { display: flex; align-items: center; gap: 14px; padding: 22px clamp(18px, 4vw, 54px); border-bottom: 1px solid #263149; }
+.brand-mark { display: grid; place-items: center; width: 44px; height: 44px; border-radius: 13px; background: linear-gradient(135deg, #6b8cff, #8a5cf6); color: white; font-size: 25px; font-weight: 800; }
+.topbar h1 { margin: 0; font-size: 21px; }
+.topbar p, .panel-heading p { margin: 4px 0 0; color: #97a5c0; font-size: 13px; }
+.version { margin-left: auto; padding: 7px 10px; border: 1px solid #3b4a68; border-radius: 999px; color: #aebdff; font-size: 10px; letter-spacing: .12em; }
+.workspace { display: grid; grid-template-columns: minmax(0, 1fr) minmax(0, 1fr); gap: 18px; padding: 24px clamp(18px, 4vw, 54px); }
+.panel { min-width: 0; padding: 18px; border: 1px solid #293650; border-radius: 18px; background: rgba(17, 25, 42, .92); box-shadow: 0 16px 45px rgba(0, 0, 0, .18); }
+.panel-heading { display: flex; align-items: center; justify-content: space-between; gap: 14px; margin-bottom: 16px; }
+.panel-heading h2 { margin: 0; font-size: 16px; }
+.file-label, .preview-dot { color: #9db0d8; font-size: 11px; }
+.preview-dot { color: #54d6a0; }
+textarea { display: block; width: 100%; min-height: 390px; resize: vertical; padding: 18px; border: 1px solid #30405e; border-radius: 12px; outline: none; background: #090e19; color: #dce7ff; font: 14px/1.9 Consolas, "Courier New", monospace; tab-size: 2; }
+textarea:focus { border-color: #718cff; box-shadow: 0 0 0 3px rgba(113, 140, 255, .12); }
+.editor-actions { display: flex; flex-wrap: wrap; gap: 10px; margin-top: 14px; }
+button { border: 0; border-radius: 10px; padding: 11px 15px; font-weight: 650; cursor: pointer; }
+.primary-button { background: #5878ff; color: white; }
+.secondary-button { border: 1px solid #3b4a68; background: #182238; color: #d8e1f7; }
+.status { min-height: 22px; margin: 13px 0 0; color: #9caecc; font-size: 12px; line-height: 1.6; }
+.status.error { color: #ff9c9c; }
+.status.success { color: #6de0ae; }
+iframe { display: block; width: 100%; min-height: 475px; border: 1px solid #30405e; border-radius: 12px; background: white; }
+footer { padding: 0 18px 24px; color: #72819e; text-align: center; font-size: 12px; }
+@media (max-width: 850px) { .workspace { grid-template-columns: 1fr; } textarea { min-height: 300px; } iframe { min-height: 400px; } }
