@@ -1,0 +1,7 @@
+# My first YasinCode program
+site "My first website"
+heading "Welcome to YasinCode!"
+text "I am building my own programming language."
+button "Get started"
+background "#eef3ff"
+run
