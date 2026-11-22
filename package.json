@@ -1,0 +1,12 @@
+{
+  "name": "yasincode",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "description": "A beginner-friendly bilingual programming language for building web pages.",
+  "scripts": {
+    "preview": "node src/server.js",
+    "build:example": "node src/cli.js examples/hello.yasin",
+    "test": "node --test"
+  }
+}
